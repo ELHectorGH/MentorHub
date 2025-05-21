@@ -40,6 +40,14 @@
   filter: invert(97%) sepia(2%) saturate(1592%) hue-rotate(178deg) brightness(97%) contrast(97%);
 }
 
+.nav-tabs .nav-link {
+    color: whitesmoke;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #408EC2;
+}
+
 
 /********/
 .card {
