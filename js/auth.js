@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ${email.split('@')[0]}
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="mailto:soporte@mentorhub.store">Contactar Soporte</a></li>
+            <li><a class="dropdown-item" href="mailto:support@mentorhub.store">Contactar Soporte</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#" onclick="logout()">Cerrar sesión</a></li>
           </ul>
