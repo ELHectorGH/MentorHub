@@ -16,6 +16,27 @@
 </head>
 <!-- ------------------------------------DETALLES GENERALES-------------------------------- -->
 
+<!-- Firebase y MD5 -->
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
+
+<script>
+  // Inicializar Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyDBItHUS2LFYP-U-5oSbjJpKE6BNZWMAFo",
+  authDomain: "mentorhub-737c5.firebaseapp.com",
+  projectId: "mentorhub-737c5",
+  storageBucket: "mentorhub-737c5.firebasestorage.app",
+  messagingSenderId: "99377005067",
+  appId: "1:99377005067:web:79b878171634fbea1cfd0e",
+  measurementId: "G-4JKEPX7VLM"
+};
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="js/auth.js"></script>
+  
 <body>
   <!-- ------------------------------------NAVBAR-------------------------------- -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
