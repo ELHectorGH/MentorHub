@@ -1,10 +1,8 @@
-// Obtener Gravatar a partir del correo
 function getGravatarUrl(email) {
   const hash = md5(email.trim().toLowerCase());
   return `https://www.gravatar.com/avatar/${hash}?s=32&d=identicon`;
 }
 
-// Monitorear el estado del usuario
 firebase.auth().onAuthStateChanged((user) => {
   const navContainer = document.querySelector('.container-fluid');
   const oldButton = document.querySelector('.btn-secondary');
@@ -19,38 +17,38 @@ firebase.auth().onAuthStateChanged((user) => {
           ${email.split('@')[0]}
         </a>
         <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="mailto:soporte@mentorhub.com">Contactar Soporte</a></li>
+          <li><a class="dropdown-item" href="mailto:soporte@mentorhub.store">Contactar Soporte</a></li>
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="#" onclick="logout()">Cerrar sesión</a></li>
         </ul>
       </div>`;
     oldButton.outerHTML = dropdownHTML;
-  } else {
-    oldButton.addEventListener('click', showAuthPrompt);
   }
 });
 
-// Función de logout
+// Logout
 function logout() {
-  firebase.auth().signOut().then(() => {
-    location.reload();
-  });
+  firebase.auth().signOut().then(() => location.reload());
 }
 
-// Modal básico (puedes hacer uno con Bootstrap luego)
-function showAuthPrompt() {
-  const email = prompt("Correo:");
-  const password = prompt("Contraseña:");
+// Login
+document.getElementById("loginForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = document.getElementById("loginEmail").value;
+  const password = document.getElementById("loginPassword").value;
 
   firebase.auth().signInWithEmailAndPassword(email, password)
-    .catch(error => {
-      if (error.code === 'auth/user-not-found') {
-        if (confirm("¿Deseas registrarte con este correo?")) {
-          firebase.auth().createUserWithEmailAndPassword(email, password)
-            .catch(err => alert(err.message));
-        }
-      } else {
-        alert(error.message);
-      }
-    });
-}
+    .then(() => bootstrap.Modal.getInstance(document.getElementById('authModal')).hide())
+    .catch(err => alert("Error al iniciar sesión: " + err.message));
+});
+
+// Register
+document.getElementById("registerForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = document.getElementById("registerEmail").value;
+  const password = document.getElementById("registerPassword").value;
+
+  firebase.auth().createUserWithEmailAndPassword(email, password)
+    .then(() => bootstrap.Modal.getInstance(document.getElementById('authModal')).hide())
+    .catch(err => alert("Error al registrar: " + err.message));
+});
