@@ -1,0 +1,40 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #2C2C38;
+}
+
+.miembros-equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.miembro {
+  background: #1C1C29;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  color: #E6EDF3 !important;
+}
+
+.miembro img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.redes-sociales a {
+    color: var(--verde);
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.text-center {
+    color: white;
+}

@@ -1,0 +1,135 @@
+.navbar {
+  --bs-navbar-color: #E6EDF3;
+  --bs-navbar-hover-color: #E6EDF3;
+  --bs-navbar-disabled-color: #E6EDF3;
+  --bs-navbar-active-color: #E6EDF3;
+}
+
+.navbar-brand {
+  color: #E6EDF3;
+}
+
+.bg-body-tertiary {
+  background-color: #408EC2 !important;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #F0F8FF;
+}
+
+.navbar-toggler {
+  color: #14141C;
+}
+
+.navbar-nav .dropdown-menu {
+  --bs-dropdown-bg: #1C1C29;
+}
+
+.dropdown-item {
+  --bs-dropdown-link-color: #E6EDF3;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  --bs-dropdown-link-hover-color: #E6EDF3;
+  --bs-dropdown-link-hover-bg: #2C2C38;
+}
+
+.navbar-toggler-icon {
+  filter: invert(97%) sepia(2%) saturate(1592%) hue-rotate(178deg) brightness(97%) contrast(97%);
+}
+
+
+/********/
+.card {
+  text-align: center;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  border-color: #1C1C29;
+  background-color: #1C1C29;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+  border-color: #1C1C29;
+}
+
+.card-body {
+  background-color: #1C1C29;
+  border-color: #1C1C29;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #E6EDF3;
+}
+
+.card-footer {
+    color: #E6EDF3;
+    background-color: #1C1C29;
+    border-top: var(--bs-card-border-width) solid rgb(255 255 255 / 18%);
+}
+
+.text-body-secondary {
+    color: #E6EDF3 !important;
+}
+
+.offcanvas-body {
+    background-color: #14141C;
+}
+
+.offcanvas-header {
+  background-color: #1C1C29;
+  color: #E6EDF3;
+}
+
+.btn-close {
+  filter: invert(97%) sepia(2%) saturate(1592%) hue-rotate(178deg) brightness(97%) contrast(97%);
+}
+
+/**********MODALS**********/
+.modal-content {
+  color: #E6EDF3;
+  background-color: #212529;
+}
+
+.modal-header {
+  border-bottom: var(--bs-modal-header-border-width) solid #33404D;
+}
+
+.modal-footer {
+  border-top: var(--bs-modal-footer-border-width) solid #33404D;
+}
+
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #3058B4;
+    --bs-btn-border-color: #212529;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5A8AF7;
+    --bs-btn-hover-border-color: #212529;
+    --bs-btn-focus-shadow-rgb: 130, 138, 145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #3058B4;
+    --bs-btn-active-border-color: #212529;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+}
+
+.modal-header .btn-close {
+  filter: invert(97%) sepia(2%) saturate(1592%) hue-rotate(178deg) brightness(97%) contrast(97%);
+}
+
+.figure-caption {
+    color: rgb(255 255 255 / 75%);
+}
+
+footer {
+  background-color: #3B6CDE;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+  padding-bottom: 0.59rem;
+}

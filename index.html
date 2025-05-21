@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- -------------META DATOS Y REFERENCIAS DE BOOSTRAP-CSS-JAVASCRIPT---------------- -->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mentor Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" type="text/css" />
+  <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<!-- ------------------------------------DETALLES GENERALES-------------------------------- -->
+
+<body>
+  <!-- ------------------------------------NAVBAR-------------------------------- -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="favicon.ico" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Mentor Hub
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Categoria/mentores.html">Mentores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Categoria/equipo.html">Sobre Nosotros</a>
+          </li>
+        </ul>
+      </div>
+          <button type="button" class="btn btn-secondary">Iniciar Sesion/Registrar</button>
+    </div>
+  </nav>
+  <!----------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------------------------------------->
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- -------------------------------CAROUSEL 1------------------------------------------------- -->
+        <div class="carousel-item">
+          <img src="Assets/Banner2.jpg" class="d-block w-100" />
+          <div class="carousel-caption-left d-md-block">
+            <div class="carousel-text">
+              <h3>Nuestros Mentores</h3>
+              <hr />
+              <p>
+                Son personas apasionadas por lo que hacen y estaran dispuestas 
+                a enseñarte en el ambito en el que se especialian
+              </p>
+              <p>
+                Puedes encontrarlos en el apartado "Mentores"
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- -------------------------------CAROUSEL 2------------------------------------------------- -->
+        <div class="carousel-item">
+          <img src="Assets/Banner3.jpg" class="d-block w-100" />
+          <div class="carousel-caption-left d-md-block">
+            <div class="carousel-text">
+              <h3>Sobre Nosotros</h3>
+              <hr />
+              <p>
+                En Mentor Hub conectamos estudiantes con mentores certificados en habilidades clave como programación, diseño, música y
+                más.
+              </p>
+              <p>
+                Certificación
+                Todos nuestros mentores son verificados y el sitio cuenta con cifrado SSL.
+              </p>
+              <p>
+                Visión
+                Ser la plataforma líder de mentoría en Latinoamérica.
+              </p>
+              <p>
+                Misión
+                Conectar personas con mentores calificados en un entorno seguro y accesible
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- -------------------------------CAROUSEL 3 Y EL QUE APARECE PRIMERO------------------------------------------------- -->
+        <div class="carousel-item active">
+          <img src="Assets/Banner1.jpeg" class="d-block w-100" />
+          <div class="carousel-caption-left d-md-block">
+            <div class="carousel-text">
+              <h3>
+                Mentor Hub
+              </h3>
+              <hr />
+              <p>
+                En Mentor Hub conectamos estudiantes con mentores certificados en habilidades clave como programación, diseño, música y
+                más.
+              <p>
+                Nos caracterizamos por un cambio en la forma de pensar y concebir el mundo.
+              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+  <!------------------------------------------------------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <footer>
+      <h5>"El aprendizaje es el arma más poderosa para cambiar el mundo." – Mentor Hub</h5>
+      <p>© 2025 Mentor Hub. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

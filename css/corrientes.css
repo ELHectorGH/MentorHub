@@ -1,0 +1,42 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #2C2C38;
+}
+
+.text-center {
+    color: white;
+}
+
+.card {
+  text-align: center;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  border-color: #1C1C29;
+  background-color: #1C1C29;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+  border-color: #1C1C29;
+}
+
+.card-body {
+  background-color: #1C1C29;
+  border-color: #1C1C29;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #E6EDF3;
+}
+
+.card-footer {
+    color: #E6EDF3;
+    background-color: #1C1C29;
+    border-top: var(--bs-card-border-width) solid rgb(255 255 255 / 18%);
+}
+
+.text-body-secondary {
+    color: #E6EDF3 !important;
+}
